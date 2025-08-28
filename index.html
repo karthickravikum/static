@@ -4,7 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Reset some default margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #1e293b;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #e2e8f0;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* Main sections */
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #1e40af;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Navigation */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,12 +108,12 @@
   <main>
     <section>
       <h2>About Me</h2>
-      <p>This is a simple website created using HTML5 and CSS3.</p>
+      <p>This is a simple website created using HTML5 and CSS3. You can customize this section with your personal details, skills, and background.</p>
     </section>
     
     <section>
       <h2>Projects</h2>
-      <p>Details about your work or portfolio can go here.</p>
+      <p>Details about your work or portfolio can go here. You can include links, images, or even case studies of your best projects.</p>
     </section>
   </main>
 
